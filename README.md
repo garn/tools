@@ -1,8 +1,7 @@
 tools
 =====
-tools about vim,programming or edit.
+.vimrc
 =====
-==.vimrc
 1.按F5可以直接编译并执行C、C++、java代码以及执行shell脚本，按“F8”可进行C、C++代码的调试
 
 2.自动插入文件头 ，新建C、C++源文件时自动插入表头：包括文件名、作者、联系方式、建立时间等，读者可根据需求自行更改
