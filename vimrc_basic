@@ -1,0 +1,40 @@
+set nu "显示行号
+set showcmd  "显示命令
+set guifont=Courier_New:h10:cANSI "设置字体
+set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936 "set coding
+set termencoding=utf-8 "set coding
+set encoding=utf-8 "set coding
+set fileencodings=ucs-bom,utf-8,cp936 "set coding
+set fileencoding=utf-8 "set coding
+set syntax=on "语法高亮
+set autowrite
+set ruler      " 打开状态栏标尺
+set cursorline " 突出显示当前行
+set tabstop=4 " tab width
+set ruler
+
+" 统一缩进为4 
+set softtabstop=4
+set shiftwidth=4
+
+" 自动缩进   
+set autoindent
+set cindent
+filetype indent on
+autocmd FileType python setlocal et sta sw=4 sts=4
+
+"在可折叠处（大括号中间）：""""""""""""""""""""""""""""""""""""
+"zc     折叠                                                  "
+"zC     对所在范围内所有嵌套的折叠点进行折叠                  "
+"zo     展开折叠                                              "
+"zO     对所在范围内所有嵌套的折叠点展开                      "
+"[z     到当前打开的折叠的开始处。                            "
+"]z     到当前打开的折叠的末尾处。                            "
+"zj     向下移动。到达下一个折叠的开始处。关闭的折叠也被计入  "
+"zk     向上移动到前一折叠的结束处。关闭的折叠也被计入。      "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set foldenable
+set foldmethod=manual
+"pythoncomplete配置
+autocmd filetype python set omnifunc=pythoncomplete#Complete
+
